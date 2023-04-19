@@ -19,6 +19,7 @@ $color-tetiary: #0b0d17;
 
 body {
     font-size: 62.5%;
+    overflow-x: hidden;
 }
 
 //UTILITIES
@@ -91,29 +92,30 @@ header {
         }
 
         .line {
-            height: 1px;
+            height: 0.5px;
             width: 33%;
             background-color: #ffffff;
             position: absolute;
             // right: 40%;
             position: absolute;
-            left: 12%;
+            left: 10.5%;
 
         }
 
         .nav {
             width: 57%;
             position: absolute;
-            right: -1%;
+            right: -0.5%;
             background-color: rgba(255, 255, 255, 0.2);
             backdrop-filter: blur(5px);
             opacity: 0.9;
+            
         
 
             ol {
                 display: flex;
                 justify-content: space-evenly;
-            
+                list-style: none;
 
                 li {
                     // display: inline-block;
@@ -131,7 +133,7 @@ header {
                         transition: 0.3s all;
                         
                         &:hover {
-                            border-bottom: 1px solid $color-secondary;
+                            border-bottom: 1px solid #fff;
                         }
                         
                     }
@@ -184,16 +186,46 @@ header {
         display: flex;
         justify-content: center;
         align-items: center;
+        cursor: pointer;
+        transition: all 0.3s;
 
-        .btn {
-            display: inline-block;
-            width: 50%;
+        
+            
+       
+        
+        // Finding ways to create interactivity to the landing page buttons
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+            background-color: blue;
+            z-index: -1;
+           
+        }
+        
+        
+        
+        .landing-btn {
+            padding: 4.1rem 3rem;
+            // width: 50%;
+            // height: 50%;
             border-radius: 50%;
             color: $color-tetiary;
             font-size: 2rem;
             text-decoration: none;
             text-align: center;
+            // background-color: #d0d6f9;
             
+            .header__btn:hover ~ .landing-btn   {
+                transform: scale(1.1);
+                background-color: $color-tetiary;
+                opacity: 0.4;
+            }
         }
     }
+    
 }
