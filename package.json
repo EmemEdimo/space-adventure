@@ -1,0 +1,14 @@
+{
+  "name": "space",
+  "version": "1.0.0",
+  "description": "Landing page for space travel project",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass scss/main.scss styles/main.css -w"
+  },
+  "author": "Emem Edimo",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  }
+}

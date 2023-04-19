@@ -1,0 +1,124 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+
+
+$color-primary: #ffffff;
+$color-secondary: #d0d6f9;
+$color-tetiary: #0b0d17;
+
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 62.5%;
+}
+
+//UTILITIES
+
+
+h1, h2, h3, h4 {
+    font-family: 'Bellefair', serif;
+    color: $color-primary;
+}
+
+h5, p, a {
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.heading-1 {
+    font-size: 8.2rem ;
+    // line-height: ;
+    color: $color-primary;
+}
+
+
+header {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    background-color: $color-tetiary;
+    position: relative;
+
+
+    .header__wrap-left {
+        width: 30vw;
+        height: 100%;
+        // border: 1px solid black;
+        background: url(../images/Home-image1.png) no-repeat center center/cover;
+    }
+
+    .header__wrap-right {
+        width: 70vw;
+        height: 100%;
+        // border: 1px solid red;
+        background: url(../images/Home-image2.png) no-repeat center center/cover;
+    }
+
+    .nav {
+        width: 100%;
+        height: 10%;
+        border: 1px solid white;
+        position: absolute;
+        top: 2rem;
+        left: 0;
+    }
+
+    .header_content {
+        position: absolute;
+        left: 15%;
+        bottom: 10%;
+        height: fit-content;
+        width: 50%;
+      
+        h5 {
+
+            font-size: 1.75rem;
+            line-height: 3.3;
+            color: #d0d6f9;
+        }
+
+        p {
+            width: 25rem;
+            font-size: 1.125rem;
+            line-height: 1.6;
+            word-spacing: 4.75;
+            color: #d0d6f9;
+            text-align: justify;
+
+        }
+    }
+
+    .header__btn {
+        position: absolute;
+        bottom: 10%;
+        right: 20%;
+        height: 12rem;
+        width: 12rem;
+        border-radius: 50%;
+        background-color: $color-primary;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .btn {
+            display: inline-block;
+            width: 50%;
+            border-radius: 50%;
+            color: $color-tetiary;
+            font-size: 2rem;
+            text-decoration: none;
+            text-align: center;
+            
+        }
+    }
+}

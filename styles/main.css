@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 62.5%;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Bellefair", serif;
+  color: #ffffff;
+}
+
+h5, p, a {
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+.heading-1 {
+  font-size: 8.2rem;
+  color: #ffffff;
+}
+
+header {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  display: flex;
+  background-color: #0b0d17;
+  position: relative;
+}
+header .header__wrap-left {
+  width: 30vw;
+  height: 100%;
+  background: url(../images/Home-image1.png) no-repeat center center/cover;
+}
+header .header__wrap-right {
+  width: 70vw;
+  height: 100%;
+  background: url(../images/Home-image2.png) no-repeat center center/cover;
+}
+header .nav {
+  width: 100%;
+  height: 10%;
+  border: 1px solid white;
+  position: absolute;
+  top: 2rem;
+  left: 0;
+}
+header .header_content {
+  position: absolute;
+  left: 15%;
+  bottom: 10%;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 50%;
+}
+header .header_content h5 {
+  font-size: 1.75rem;
+  line-height: 3.3;
+  color: #d0d6f9;
+}
+header .header_content p {
+  width: 25rem;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  word-spacing: 4.75;
+  color: #d0d6f9;
+  text-align: justify;
+}
+header .header__btn {
+  position: absolute;
+  bottom: 10%;
+  right: 20%;
+  height: 12rem;
+  width: 12rem;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .header__btn .btn {
+  display: inline-block;
+  width: 50%;
+  border-radius: 50%;
+  color: #0b0d17;
+  font-size: 2rem;
+  text-decoration: none;
+  text-align: center;
+}/*# sourceMappingURL=main.css.map */
