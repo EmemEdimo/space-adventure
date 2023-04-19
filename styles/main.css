@@ -12,6 +12,10 @@ body {
   font-size: 62.5%;
 }
 
+.active {
+  border-bottom: 2px solid #ffffff;
+}
+
 h1, h2, h3, h4 {
   font-family: "Bellefair", serif;
   color: #ffffff;
@@ -44,13 +48,62 @@ header .header__wrap-right {
   height: 100%;
   background: url(../images/Home-image2.png) no-repeat center center/cover;
 }
-header .nav {
+header .navbar {
   width: 100%;
   height: 10%;
-  border: 1px solid white;
   position: absolute;
-  top: 2rem;
+  top: 1rem;
   left: 0;
+  display: flex;
+  align-items: center;
+}
+header .navbar .logo {
+  position: absolute;
+  left: 3%;
+  width: 3.8rem;
+  height: 3.8rem;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .navbar .line {
+  height: 1px;
+  width: 33%;
+  background-color: #ffffff;
+  position: absolute;
+  position: absolute;
+  left: 12%;
+}
+header .navbar .nav {
+  width: 57%;
+  position: absolute;
+  right: -1%;
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  opacity: 0.9;
+}
+header .navbar .nav ol {
+  display: flex;
+  justify-content: space-evenly;
+}
+header .navbar .nav ol li a {
+  display: inline-block;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 400;
+  padding: 1rem;
+  transition: 0.3s all;
+}
+header .navbar .nav ol li a:hover {
+  border-bottom: 1px solid #d0d6f9;
+}
+header .navbar .nav ol li span {
+  font-weight: 700;
+  margin-right: 0.5rem;
 }
 header .header_content {
   position: absolute;
