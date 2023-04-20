@@ -31,6 +31,65 @@ h5, p, a {
   color: #ffffff;
 }
 
+.navbar {
+  width: 100%;
+  height: 10%;
+  position: absolute;
+  top: 1rem;
+  left: 0;
+  display: flex;
+  align-items: center;
+}
+.navbar .logo {
+  position: absolute;
+  left: 3%;
+  width: 3.8rem;
+  height: 3.8rem;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar .line {
+  height: 0.5px;
+  width: 33%;
+  background-color: #ffffff;
+  position: absolute;
+  position: absolute;
+  left: 10.5%;
+}
+.navbar .nav {
+  width: 57%;
+  position: absolute;
+  right: -0.5%;
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  opacity: 0.9;
+}
+.navbar .nav ol {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+.navbar .nav ol li a {
+  display: inline-block;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 400;
+  padding: 1rem;
+  transition: 0.3s all;
+}
+.navbar .nav ol li a:hover {
+  border-bottom: 1px solid #fff;
+}
+.navbar .nav ol li span {
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
 header {
   height: 100vh;
   width: 100vw;
@@ -48,64 +107,6 @@ header .header__wrap-right {
   width: 70vw;
   height: 100%;
   background: url(../images/Home-image2.png) no-repeat center center/cover;
-}
-header .navbar {
-  width: 100%;
-  height: 10%;
-  position: absolute;
-  top: 1rem;
-  left: 0;
-  display: flex;
-  align-items: center;
-}
-header .navbar .logo {
-  position: absolute;
-  left: 3%;
-  width: 3.8rem;
-  height: 3.8rem;
-  background-color: #ffffff;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-header .navbar .line {
-  height: 0.5px;
-  width: 33%;
-  background-color: #ffffff;
-  position: absolute;
-  position: absolute;
-  left: 10.5%;
-}
-header .navbar .nav {
-  width: 57%;
-  position: absolute;
-  right: -0.5%;
-  background-color: rgba(255, 255, 255, 0.2);
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
-  opacity: 0.9;
-}
-header .navbar .nav ol {
-  display: flex;
-  justify-content: space-evenly;
-  list-style: none;
-}
-header .navbar .nav ol li a {
-  display: inline-block;
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 1.2rem;
-  font-weight: 400;
-  padding: 1rem;
-  transition: 0.3s all;
-}
-header .navbar .nav ol li a:hover {
-  border-bottom: 1px solid #fff;
-}
-header .navbar .nav ol li span {
-  font-weight: 700;
-  margin-right: 0.5rem;
 }
 header .header_content {
   position: absolute;
@@ -166,4 +167,10 @@ header .header__btn .landing-btn .header__btn:hover ~ .landing-btn {
   transform: scale(1.1);
   background-color: #0b0d17;
   opacity: 0.4;
+}
+
+#destination {
+  height: 100vh;
+  width: 100vw;
+  background: url(../images/dest-bg.jpg) center center/cover;
 }/*# sourceMappingURL=main.css.map */

@@ -43,6 +43,89 @@ h5, p, a {
     color: $color-primary;
 }
 
+//THE NAVBAR STYLING FOR THE ENTIRE PROJECT
+.navbar {
+    width: 100%;
+    height: 10%;
+    // border: 1px solid white;
+    position: absolute;
+    top: 1rem;
+    left: 0;
+
+    display: flex;
+    // justify-content: center;
+    align-items: center ;
+
+    .logo {
+        position: absolute;
+        left: 3%;
+        width: 3.8rem;
+        height: 3.8rem;
+        background-color: $color-primary;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center ;
+    }
+
+    .line {
+        height: 0.5px;
+        width: 33%;
+        background-color: #ffffff;
+        position: absolute;
+        // right: 40%;
+        position: absolute;
+        left: 10.5%;
+
+    }
+
+    .nav {
+        width: 57%;
+        position: absolute;
+        right: -0.5%;
+        background-color: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(5px);
+        opacity: 0.9;
+        
+    
+
+        ol {
+            display: flex;
+            justify-content: space-evenly;
+            list-style: none;
+
+            li {
+                // display: inline-block;
+                // padding: 1rem;
+                
+                
+                a {
+                    display: inline-block;
+                    text-decoration: none;
+                    color: #ffffff;
+                    font-size: 1.2rem;
+                    font-weight: 400;
+                    padding: 1rem;
+                    // border-bottom: 1px solid transparent;
+                    transition: 0.3s all;
+                    
+                    &:hover {
+                        border-bottom: 1px solid #fff;
+                    }
+                    
+                }
+
+                span {
+                    font-weight: 700;
+                    margin-right: 0.5rem;
+                }
+            }
+        }
+
+
+    }
+}
+
 
 header {
     height: 100vh;
@@ -67,87 +150,7 @@ header {
         background: url(../images/Home-image2.png) no-repeat center center/cover;
     }
 
-    .navbar {
-        width: 100%;
-        height: 10%;
-        // border: 1px solid white;
-        position: absolute;
-        top: 1rem;
-        left: 0;
-
-        display: flex;
-        // justify-content: center;
-        align-items: center ;
-
-        .logo {
-            position: absolute;
-            left: 3%;
-            width: 3.8rem;
-            height: 3.8rem;
-            background-color: $color-primary;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center ;
-        }
-
-        .line {
-            height: 0.5px;
-            width: 33%;
-            background-color: #ffffff;
-            position: absolute;
-            // right: 40%;
-            position: absolute;
-            left: 10.5%;
-
-        }
-
-        .nav {
-            width: 57%;
-            position: absolute;
-            right: -0.5%;
-            background-color: rgba(255, 255, 255, 0.2);
-            backdrop-filter: blur(5px);
-            opacity: 0.9;
-            
-        
-
-            ol {
-                display: flex;
-                justify-content: space-evenly;
-                list-style: none;
-
-                li {
-                    // display: inline-block;
-                    // padding: 1rem;
-                    
-                    
-                    a {
-                        display: inline-block;
-                        text-decoration: none;
-                        color: #ffffff;
-                        font-size: 1.2rem;
-                        font-weight: 400;
-                        padding: 1rem;
-                        // border-bottom: 1px solid transparent;
-                        transition: 0.3s all;
-                        
-                        &:hover {
-                            border-bottom: 1px solid #fff;
-                        }
-                        
-                    }
-
-                    span {
-                        font-weight: 700;
-                        margin-right: 0.5rem;
-                    }
-                }
-            }
-
-
-        }
-    }
+   
 
     .header_content {
         position: absolute;
@@ -228,4 +231,18 @@ header {
         }
     }
     
+}
+
+
+
+// STYLING FOR DESTINATION SECTION
+#destination {
+    height: 100vh;
+    width: 100vw;
+    // background-color: $color-tetiary;
+    background: url(../images/dest-bg.jpg) center center/cover;
+
+    
+
+
 }
