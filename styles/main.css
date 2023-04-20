@@ -144,7 +144,7 @@ header .header_content p {
 }
 header .header__btn {
   position: absolute;
-  bottom: 10%;
+  bottom: 15%;
   right: 15%;
   text-align: center;
 }
@@ -158,7 +158,7 @@ header .header__btn .landing-btn:visited {
   line-height: 3.667rem;
   letter-spacing: 0.2rem;
   text-decoration: none;
-  padding: 40% 30%;
+  padding: 40% 23%;
   background-color: #ffffff;
   border-radius: 50%;
   position: relative;
@@ -179,8 +179,9 @@ header .header__btn .landing-btn:visited::after {
 }
 header .header__btn .landing-btn:link:hover::after,
 header .header__btn .landing-btn:visited:hover::after {
-  transform: scale(1.3);
-  opacity: 0;
+  transform: scale(1.6);
+  opacity: 0.1;
+  mix-blend-mode: normal;
 }
 
 #destination {
@@ -193,20 +194,21 @@ header .header__btn .landing-btn:visited:hover::after {
   color: #ffffff;
 }
 #destination .content__wrap {
-  width: 80vw;
-  height: 80vh;
-  border: 1px solid #fff;
-  margin-top: 3rem;
+  width: 90%;
+  height: 100%;
   display: flex;
+  padding: 1.5rem 0;
 }
 #destination .content__wrap-img {
   width: 50%;
   height: 100%;
-  border: 1px solid #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+#destination .content__wrap-img h5 {
+  margin-top: 10rem;
 }
 #destination .content__wrap-img span {
   font-weight: 700;
@@ -214,12 +216,69 @@ header .header__btn .landing-btn:visited:hover::after {
   letter-spacing: 4.725px;
 }
 #destination .content__wrap-img .image {
-  height: 80%;
-  width: 80%;
-  background: url(../images/dest-moon1.png) no-repeat center center/contain;
+  height: 40.5rem;
+  width: 40.5rem;
+  background: url(../images/destination-img.png) no-repeat center center/contain;
+  margin-top: 5rem;
 }
 #destination .content__wrap-text {
   width: 50%;
   height: 100%;
-  border: 1px solid #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0 7rem;
+}
+#destination .content__wrap-text nav {
+  margin-top: 20rem;
+}
+#destination .content__wrap-text nav ul {
+  list-style: none;
+  display: flex;
+}
+#destination .content__wrap-text nav ul a {
+  display: inline-block;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.92rem;
+  letter-spacing: 0.27rem;
+  color: #fff;
+  text-decoration: none;
+  margin-right: 2rem;
+}
+#destination .content-heading {
+  font-size: 10rem;
+  line-height: 11.5rem;
+  font-weight: 400;
+}
+#destination .content-para {
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+  color: #d0d6f9;
+  text-align: justify;
+  border-bottom: 1px solid #777;
+  padding-bottom: 3rem;
+}
+#destination .content__wrap-footer {
+  display: flex;
+  align-self: flex-start;
+  gap: 5rem;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 400;
+}
+#destination .content__wrap-footer .foot-text-sm {
+  font-family: "Barlow Condensed";
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  letter-spacing: 0.23625rem;
+  color: #d0d6f9;
+  margin: 1rem 0.5rem;
+}
+#destination .content__wrap-footer .foot-text-lg {
+  font-family: "Bellefair";
+  font-size: 2.8rem;
+  line-height: 3.2rem;
 }/*# sourceMappingURL=main.css.map */
