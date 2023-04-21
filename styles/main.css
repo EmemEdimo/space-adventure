@@ -14,7 +14,7 @@ html {
 
 body {
   box-sizing: border-box;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .active {
@@ -28,6 +28,16 @@ h1, h2, h3, h4 {
 
 h5, p, a {
   font-family: "Barlow Condensed", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: all 0.1s;
+}
+
+a:hover {
+  border-bottom: 2px solid #d0d6f9;
 }
 
 .heading-5 {
@@ -48,7 +58,7 @@ h5, p, a {
 .navbar {
   width: 100%;
   height: 9.8rem;
-  position: absolute;
+  position: fixed;
   top: 1.5rem;
   left: 0;
   display: flex;
@@ -75,7 +85,7 @@ h5, p, a {
 }
 .navbar .nav {
   width: 57%;
-  position: fixed;
+  position: absolute;
   right: -0.5%;
   background-color: rgba(255, 255, 255, 0.04);
   -webkit-backdrop-filter: blur(5px);
@@ -96,10 +106,6 @@ h5, p, a {
   letter-spacing: 0.2rem;
   font-weight: 400;
   padding: 2rem;
-  transition: 0.3s all;
-}
-.navbar .nav ol li a:hover {
-  border-bottom: 1px solid #fff;
 }
 .navbar .nav ol li span {
   font-weight: 700;
@@ -185,13 +191,19 @@ header .header__btn .landing-btn:visited:hover::after {
 }
 
 #destination {
-  height: 100vh;
+  height: -moz-fit-content;
+  height: fit-content;
   width: 100vw;
-  background: url(../images/dest-bg.jpg) center center/cover;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   color: #ffffff;
+}
+#destination .container {
+  height: 100vh;
+  width: 100vw;
+  background: url(../images/dest-bg.jpg) center center/cover;
 }
 #destination .content__wrap {
   width: 90%;
@@ -218,18 +230,29 @@ header .header__btn .landing-btn:visited:hover::after {
 #destination .content__wrap-img .image {
   height: 40.5rem;
   width: 40.5rem;
-  background: url(../images/destination-img.png) no-repeat center center/contain;
   margin-top: 5rem;
+}
+#destination .content__wrap-img .moon-img {
+  background: url(../images/destination-moon.png) no-repeat center center/contain;
+}
+#destination .content__wrap-img .mars-img {
+  background: url(../images/destination-mars.png) no-repeat center center/contain;
+}
+#destination .content__wrap-img .europa-img {
+  background: url(../images/destination-europa.png) no-repeat center center/contain;
+}
+#destination .content__wrap-img .titan-img {
+  background: url(../images/destination-titan.png) no-repeat center center/contain;
 }
 #destination .content__wrap-text {
   width: 50%;
   height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   gap: 2rem;
-  padding: 0 7rem;
+  padding: 0 12rem;
 }
 #destination .content__wrap-text nav {
   margin-top: 20rem;
@@ -240,30 +263,30 @@ header .header__btn .landing-btn:visited:hover::after {
 }
 #destination .content__wrap-text nav ul a {
   display: inline-block;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   font-weight: 400;
   line-height: 1.92rem;
   letter-spacing: 0.27rem;
   color: #fff;
+  padding: 0.5rem;
   text-decoration: none;
-  margin-right: 2rem;
+  margin-right: 1.5rem;
 }
 #destination .content-heading {
-  font-size: 10rem;
-  line-height: 11.5rem;
+  font-size: 9rem;
+  line-height: 10.5rem;
   font-weight: 400;
 }
 #destination .content-para {
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   line-height: 3.2rem;
   color: #d0d6f9;
   text-align: justify;
   border-bottom: 1px solid #777;
-  padding-bottom: 3rem;
+  padding-bottom: 2.5rem;
 }
 #destination .content__wrap-footer {
   display: flex;
-  align-self: flex-start;
   gap: 5rem;
   text-transform: uppercase;
   font-style: normal;
@@ -275,7 +298,7 @@ header .header__btn .landing-btn:visited:hover::after {
   line-height: 1.7rem;
   letter-spacing: 0.23625rem;
   color: #d0d6f9;
-  margin: 1rem 0.5rem;
+  margin: 0.8rem 0.5rem;
 }
 #destination .content__wrap-footer .foot-text-lg {
   font-family: "Bellefair";
