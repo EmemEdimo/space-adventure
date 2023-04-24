@@ -1,12 +1,15 @@
+@import "variables";
+@import "utilities";
+@import "home";
+@import "crew";
+@import "destination";
+@import "technology";
+
 
 @import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
 
-
-$color-primary: #ffffff;
-$color-secondary: #d0d6f9;
-$color-tetiary: #0b0d17;
 
 
 *,
@@ -19,7 +22,7 @@ $color-tetiary: #0b0d17;
 
 html {
 
-    font-size: 62.5%;
+    font-size: 62.5%; // Makes 1rem = 10px
 }
 
 body {
@@ -27,7 +30,15 @@ body {
     overflow: hidden;
 }
 
-//UTILITIES
+a {
+    text-decoration: none;
+    color: $color-primary;
+    transition: all 0.1s;
+}
+
+a:hover {
+    border-bottom: 2px solid $color-secondary;
+}
 
 .active {
     border-bottom: 2px solid $color-primary;
@@ -42,42 +53,17 @@ h5, p, a {
     font-family: 'Barlow Condensed', sans-serif;
 }
 
-a {
-    text-decoration: none;
-    color: $color-primary;
-    transition: all 0.1s;
-}
 
-a:hover {
-    border-bottom: 2px solid $color-secondary;
-}
-
-.heading-5 {
-        font-size: 2.8rem;
-        line-height: 3.36rem;
-        letter-spacing: 0.4725rem;
-        font-family: 'Barlow Condensed', sans-serif;
-        font-weight: 400;
-        text-transform: uppercase;
-}
-
-.heading-1 {
-    font-size: 15rem ;
-    line-height: 17.19rem;
-    color: $color-primary;
-}
 
 //THE NAVBAR STYLING FOR THE ENTIRE PROJECT
 .navbar {
     width: 100%;
     height: 9.8rem;
-    // border: 1px solid white;
     position: fixed;
     top: 1.5rem;
     left: 0;
 
     display: flex;
-    // justify-content: center;
     align-items: center ;
 
     .logo {
@@ -97,7 +83,6 @@ a:hover {
         width: 33%;
         background-color: #ffffff;
         position: absolute;
-        // right: 40%;
         position: absolute;
         left: 10.5%;
 
@@ -119,9 +104,6 @@ a:hover {
             list-style: none;
 
             li {
-                // display: inline-block;
-                // padding: 1rem;
-                
                 
                 a {
                     display: inline-block;
@@ -132,8 +114,6 @@ a:hover {
                     letter-spacing: 0.2rem;
                     font-weight: 400;
                     padding: 2rem;
-                    // border-bottom: 1px solid transparent;
-                    // transition: all 0.1s;
                 }
 
                 span {
@@ -145,255 +125,4 @@ a:hover {
 
 
     }
-}
-
-
-header {
-    height: 100vh;
-    width: 100vw;
-    position: relative;
-    display: flex;
-    background-color: $color-tetiary;
-    position: relative;
-
-
-    .header__wrap-left {
-        width: 30vw;
-        height: 100%;
-        // border: 1px solid black;
-        background: url(../images/Home-image1.png) no-repeat center center/cover;
-    }
-
-    .header__wrap-right {
-        width: 70vw;
-        height: 100%;
-        // border: 1px solid red;
-        background: url(../images/Home-image2.png) no-repeat center center/cover;
-    }
-
-   
-
-    .header_content {
-        position: absolute;
-        left: 15%;
-        bottom: 10%;
-        height: fit-content;
-        width: 50%;
-      
-        h5 {
-            color: $color-secondary;
-        }
-
-        p {
-            width: 44.4rem;
-            font-size: 1.8rem;
-            line-height: 3.2rem;
-            // word-spacing: 4.75;
-            color: #d0d6f9;
-            text-align: justify;
-
-        }
-    }
-
-    .header__btn {
-        position: absolute;
-        bottom: 15%;
-        right: 15%;
-        text-align: center;  
-            
-        
-        
-        .landing-btn:link,
-        .landing-btn:visited {
-            display: inline-block;
-            height: 26.4rem;
-            width: 26.4rem;
-            color: rgba(11, 13, 23, 1);
-            font-size: 3.2rem;
-            line-height: 3.667rem;
-            letter-spacing: 0.2rem;
-            text-decoration: none;
-            padding: 40% 23%;
-            background-color: $color-primary;
-            border-radius: 50%;
-            position: relative;
-            isolation: isolate; //To create a new stacking context.
-            
-            
-            //CREATING AN AFTER PSEUDO ELEMENT WHICH WILL SCALE BEHIND THE MAIN BUTTON ELEMENT TO GIVE THE EXPECTED HOVER EFFECT
-            &::after {
-                content: "";
-                position: absolute;
-                left: 0;
-                top: 0;
-                height: 100%;
-                width: 100%;
-                border-radius: 50%;
-                background-color: $color-primary;
-                z-index: -1;
-                transition: all 0.3s;
-               
-            }
-            
-            &:hover::after {
-                transform: scale(1.6);
-                opacity: 0.1;
-                mix-blend-mode: normal;
-            }
-            
-        }
-    }
-    
-}
-
-
-
-// STYLING FOR DESTINATION SECTION
-#destination {
-    height: fit-content;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: $color-primary;
-
-    .container {
-        height: 100vh;
-        width: 100vw;
-        background: url(../images/dest-bg.jpg) center center/cover;
-    }
-
-    .content__wrap {
-        width: 90%;
-        height: 100%;
-        // border: 1px solid #fff;
-        // margin-top: 3rem;
-        display: flex;
-        padding: 1.5rem 0;
-    }
-
-    .content__wrap-img {
-        width: 50%;
-        height: 100%;
-        // border: 1px solid #fff;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        // gap: 9.8rem;
-
-        h5 {
-            margin-top: 10rem;
-        }
-
-        span {
-            font-weight: 700;
-            opacity: 0.25;
-            letter-spacing: 4.725px;
-        }
-
-        .image {
-            height: 40.5rem;
-            width: 40.5rem;
-            margin-top: 5rem;
-            
-        }
-        
-        .moon-img {
-            background:  url(../images/destination-moon.png) no-repeat center center/contain;
-        }
-        .mars-img {
-            background:  url(../images/destination-mars.png) no-repeat center center/contain;
-        }
-        .europa-img {
-            background:  url(../images/destination-europa.png) no-repeat center center/contain;
-        }
-        .titan-img {
-            background:  url(../images/destination-titan.png) no-repeat center center/contain;
-        }
-
-        
-    }
-
-    .content__wrap-text {
-        width: 50%;
-        height: 100%;
-        // border: 1px solid #fff;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-        gap: 2rem;
-        padding: 0 12rem;
-
-
-        nav {
-
-            margin-top: 20rem;
-
-            ul { 
-                list-style: none;
-                display: flex;
-
-                    a {
-                        display: inline-block;
-                        font-size: 1.7rem;
-                        font-weight: 400;
-                        line-height: 1.92rem;
-                        letter-spacing: 0.27rem;
-                        color: #fff;
-                        padding: 0.5rem;
-                        text-decoration: none;
-                        margin-right: 1.5rem;
-                    }
-            }
-
-        }
-
-    }
-        .content-heading {
-            font-size: 9rem;
-            line-height: 10.5rem;
-            font-weight: 400;
-        }
-
-        .content-para {
-            font-size: 1.7rem;
-            line-height: 3.2rem;
-            color: $color-secondary;
-            text-align: justify;
-            border-bottom: 1px solid #777;
-            padding-bottom: 2.5rem;
-        }
-
-        .content__wrap-footer {
-
-            display: flex;
-            gap: 5rem;
-            text-transform: uppercase;
-            font-style: normal;
-            font-weight: 400;
-
-            
-            .foot-text-sm {
-
-                font-family: 'Barlow Condensed';
-                font-size: 1.4rem;
-                line-height: 1.7rem;
-                letter-spacing: 0.23625rem;
-                color: $color-secondary;
-                margin: 0.8rem 0.5rem;
-            }
-
-            .foot-text-lg {
-
-                font-family: 'Bellefair';
-                font-size: 2.8rem;
-                line-height: 3.2rem;
-
-            }
-        }
-
-
 }

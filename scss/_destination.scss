@@ -1,0 +1,138 @@
+// STYLING FOR DESTINATION SECTION
+#destination {
+    height: fit-content;
+    width: 100vw;
+    
+    color: $color-primary;
+
+    .container {
+        background: url(../images/dest-bg.jpg);
+    }
+
+    
+
+    .content__wrap-img {
+        width: 50%;
+        height: 100%;
+        // border: 1px solid #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 2rem;
+        // gap: 9.8rem;
+
+        h5 {
+            margin-top: 10rem;
+        }
+
+        span {
+            font-weight: 700;
+            opacity: 0.25;
+            letter-spacing: 4.725px;
+        }
+
+        .image {
+            height: 70.5%;
+            width: 95.807%;
+            margin-top: 5rem;
+            
+        }
+        
+        .moon-img {
+            background:  url(../images/destination-moon.png) no-repeat center center/contain;
+        }
+        .mars-img {
+            background:  url(../images/destination-mars.png) no-repeat center center/contain;
+        }
+        .europa-img {
+            background:  url(../images/destination-europa.png) no-repeat center center/contain;
+        }
+        .titan-img {
+            background:  url(../images/destination-titan.png) no-repeat center center/contain;
+        }
+
+        
+    }
+
+    .content__wrap-text {
+        width: 50%;
+        height: 100%;
+        // border: 1px solid #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 2rem;
+        padding: 0 12rem 2rem 12rem;
+
+
+        nav {
+
+            margin-top: 20rem;
+
+            ul { 
+                list-style: none;
+                display: flex;
+
+                    a {
+                        display: inline-block;
+                        font-size: 1.7rem;
+                        font-weight: 400;
+                        line-height: 1.92rem;
+                        letter-spacing: 0.27rem;
+                        color: #fff;
+                        padding: 0.5rem;
+                        text-decoration: none;
+                        margin-right: 1.5rem;
+                    }
+            }
+
+        }
+
+    }
+        .content-heading {
+            font-size: 9rem;
+            line-height: 10.5rem;
+            font-weight: 400;
+        }
+
+        .content-para {
+            font-size: 1.7rem;
+            line-height: 3.2rem;
+            color: $color-secondary;
+            text-align: justify;
+            border-bottom: 1px solid #777;
+            padding-bottom: 2.5rem;
+        }
+
+        .content__wrap-footer {
+
+            display: flex;
+            gap: 5rem;
+            text-transform: uppercase;
+            font-style: normal;
+            font-weight: 400;
+
+            
+            .foot-text-sm {
+
+                font-family: 'Barlow Condensed';
+                font-size: 1.4rem;
+                line-height: 1.7rem;
+                letter-spacing: 0.23625rem;
+                color: $color-secondary;
+                margin: 0.8rem 0.5rem;
+            }
+
+            .foot-text-lg {
+
+                font-family: 'Bellefair';
+                font-size: 2.8rem;
+                line-height: 3.2rem;
+
+            }
+        }
+
+
+}
