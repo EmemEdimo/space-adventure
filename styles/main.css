@@ -307,6 +307,100 @@ header .header__btn .landing-btn:visited:hover::after {
   line-height: 3.2rem;
 }
 
+#technology {
+  height: 100vh;
+  width: 100vw;
+  color: #ffffff;
+}
+#technology .u-content__wrap {
+  justify-content: space-between;
+  width: 100%;
+  padding: 10rem 0;
+}
+#technology .container {
+  background: url(../images/tech-bg.jpg);
+}
+#technology .content__wrap-text {
+  height: 100%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6rem;
+  padding-left: 20rem;
+}
+#technology .content__wrap-text span {
+  font-weight: 700;
+  opacity: 0.25;
+  letter-spacing: 4.725px;
+}
+#technology .content__wrap-text .nav-and-text {
+  display: flex;
+  gap: 5rem;
+}
+#technology .content__wrap-text .nav-and-text .content__wrap-nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 3.5rem;
+}
+#technology .content__wrap-text .nav-and-text .content__wrap-nav ul li {
+  list-style: none;
+}
+#technology .content__wrap-text .nav-and-text .content__wrap-nav ul li a {
+  display: block;
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 3.2rem;
+  line-height: 3.6rem;
+  text-align: center;
+  padding: 1rem 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: transparent;
+}
+#technology .content__wrap-text .nav-and-text .content__wrap-nav ul li a:hover {
+  border: 1px solid rgb(255, 255, 255);
+}
+#technology .content__wrap-text .nav-and-text .content__wrap-nav ul li .active {
+  background-color: #ffffff;
+  color: #0b0d17;
+}
+#technology .content__wrap-text .nav-and-text .text-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#technology .content__wrap-text .nav-and-text .text-details p {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.7rem;
+  letter-spacing: 0.27rem;
+  color: #d0d6f9;
+  width: 44.2rem;
+}
+#technology .content__wrap-text .nav-and-text .text-details h3 {
+  font-weight: 400;
+  font-size: 5.3rem;
+  line-height: 6.4rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+#technology .content__wrap-img {
+  width: 27%;
+  height: 90%;
+  align-self: flex-end;
+}
+#technology .content__wrap-img .image {
+  height: 100%;
+  width: 100%;
+}
+#technology .content__wrap-img .tech-1 {
+  background: url(../images/tech-1.jpg) no-repeat center center/contain;
+}
+#technology .content__wrap-img .tech-2 {
+  background: url(../images/tech-2.jpg) no-repeat center center/contain;
+}
+
 *,
 *::after,
 *::before {
