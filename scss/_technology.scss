@@ -2,6 +2,16 @@
     height: 100vh;
     width: 100vw;
     color: $color-primary;
+    
+    .container {
+        background: url(../images/tech-bg.jpg);
+    }
+    
+    // .slider {
+    //     transform: translateX(-100%);
+    //     transition: transform 0.7s ease-in-out;
+    // }
+
 
     .u-content__wrap {
         justify-content: space-between;
@@ -9,9 +19,6 @@
         padding: 10rem 0;
     }
 
-    .container {
-        background: url(../images/tech-bg.jpg);
-    }    
 
 
     .content__wrap-text {
@@ -59,6 +66,7 @@
                         border: 1px solid rgba(255, 255, 255, 0.25);
                         background: transparent;
                         
+                        
                         &:hover {
                             border: 1px solid rgba(255, 255, 255);
                         }
@@ -68,7 +76,6 @@
                     .active {
                         background-color: $color-primary;
                         color: $color-tetiary;
-                        
                     }
                 }
                 
@@ -86,6 +93,7 @@
                     letter-spacing: 0.27rem;
                     color: $color-secondary;
                     width: 44.2rem;
+                    text-align: justify;
                 }
 
                 h3 {

@@ -38,25 +38,21 @@ header {
   width: 100vw;
   position: relative;
   display: flex;
-  background-color: #0b0d17;
-  position: relative;
+  justify-content: center;
+  align-items: center;
+  background: url(../images/Home-image.jpg) no-repeat center center/cover;
 }
-header .header__wrap-left {
-  width: 30vw;
-  height: 100%;
-  background: url(../images/Home-image1.png) no-repeat center center/cover;
-}
-header .header__wrap-right {
-  width: 70vw;
-  height: 100%;
-  background: url(../images/Home-image2.png) no-repeat center center/cover;
+header .u-content__wrap {
+  justify-content: space-around;
+  align-items: center;
 }
 header .header_content {
-  position: absolute;
-  left: 15%;
-  bottom: 10%;
-  height: -moz-fit-content;
-  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: left;
+  height: 80%;
   width: 50%;
 }
 header .header_content h5 {
@@ -70,22 +66,22 @@ header .header_content p {
   text-align: justify;
 }
 header .header__btn {
-  position: absolute;
-  bottom: 15%;
-  right: 15%;
-  text-align: center;
+  width: 50%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 header .header__btn .landing-btn:link,
 header .header__btn .landing-btn:visited {
   display: inline-block;
-  height: 26.4rem;
-  width: 26.4rem;
   color: rgb(11, 13, 23);
-  font-size: 3.2rem;
+  font-size: 2.5vw;
   line-height: 3.667rem;
   letter-spacing: 0.2rem;
   text-decoration: none;
-  padding: 40% 23%;
+  text-align: center;
+  padding: 18% 11%;
   background-color: #ffffff;
   border-radius: 50%;
   position: relative;
@@ -155,6 +151,7 @@ header .header__btn .landing-btn:visited:hover::after {
   font-weight: 400;
   font-size: 1.8rem;
   line-height: 32px;
+  text-align: justify;
   color: #d0d6f9;
   margin-top: 1rem;
 }
@@ -312,13 +309,13 @@ header .header__btn .landing-btn:visited:hover::after {
   width: 100vw;
   color: #ffffff;
 }
+#technology .container {
+  background: url(../images/tech-bg.jpg);
+}
 #technology .u-content__wrap {
   justify-content: space-between;
   width: 100%;
   padding: 10rem 0;
-}
-#technology .container {
-  background: url(../images/tech-bg.jpg);
 }
 #technology .content__wrap-text {
   height: 100%;
@@ -377,6 +374,7 @@ header .header__btn .landing-btn:visited:hover::after {
   letter-spacing: 0.27rem;
   color: #d0d6f9;
   width: 44.2rem;
+  text-align: justify;
 }
 #technology .content__wrap-text .nav-and-text .text-details h3 {
   font-weight: 400;
