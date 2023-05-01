@@ -115,3 +115,81 @@
 
 
 }
+
+
+@media (max-width: $laptop) {
+
+    #crew {
+
+        .content__wrap-text {
+            padding-left: 3rem;
+        }
+
+    }
+}
+
+@media (max-width: $tablet) {
+
+    #crew {
+
+        .container {
+            background: url(../images/crew-tab-bg.jpg);
+        }
+    
+        .content__wrap-img {
+            height: 50%;
+            width: 100%;
+
+            .image {
+            height: 90%;
+            width: 100%;
+                
+        }
+
+            .crew-1 {
+            background:  url(../images/crew-1.png) no-repeat center center/contain;
+        }
+        }
+    
+        .content__wrap-text {
+            height: 50%;
+            width: 100%;
+            align-items: center;
+            text-align: center;
+            padding-left: 0;
+
+            .heading-5 {
+                font-size: 2rem;
+                line-height: 2.4rem;
+                letter-spacing: 0.3375rem;
+                align-self: flex-start;
+                margin-top: 13rem;
+                margin-left: 3rem;
+            }
+
+            .crew-title {
+                margin-top: 5rem;
+                font-size: 2.4rem;
+                line-height: 2.7rem;
+            }
+
+            .crew-name {
+               font-size: 4rem;
+                line-height: 6.58rem; 
+            }
+
+              
+            .content-para {
+                font-size: 1.6rem;
+                line-height: 2.8rem;
+                text-align: center;
+                font-family: 'Barlow';
+            }
+
+            .content__wrap-footer {
+                margin-top: 3rem;
+            }
+            }
+
+        }
+    }

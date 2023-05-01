@@ -92,7 +92,7 @@
                     line-height: 2.7rem;
                     letter-spacing: 0.27rem;
                     color: $color-secondary;
-                    width: 44.2rem;
+                    max-width: 44.2rem;
                     text-align: justify;
                 }
 
@@ -112,8 +112,8 @@
 
 
     .content__wrap-img {
-        width: 27%;
-        height: 90%;
+        width: 35vw;
+        height: 60vh;
         align-self: flex-end;
 
         .image {
@@ -128,8 +128,114 @@
         .tech-2 {
             background: url(../images/tech-2.jpg) no-repeat center center/contain;
         }
+        .tech-3 {
+            background: url(../images/tech-3.jpg) no-repeat center center/contain;
+        }
 
     }
 }
 
+@media (max-width: $laptop) {
+    #technology {
+        .content__wrap-text {
+            padding-left: 5rem;
+            
+        } 
 
+    }
+
+}
+
+
+@media (max-width: $tablet) {
+    #technology {
+        
+        .conntainer {
+            background: url(../images/tech-tab-bg.jpg);
+        }
+        
+        .u-content__wrap {
+            flex-direction: column-reverse;
+            justify-content: flex-end;
+            width: 100%;
+            padding: 0;
+            position: relative;
+        }
+        
+        .content__wrap-img { 
+            height: 35%;
+            width: 100%;
+            margin-top: 18rem;
+
+            .tech-1 {
+                background: url(../images/tech-1-tab.jpg) no-repeat center center/cover;
+            }
+            .tech-2 {
+                background: url(../images/tech-2-tab.jpg) no-repeat center center/cover;
+            }
+            .tech-3 {
+                background: url(../images/tech-3-tab.jpg) no-repeat center center/cover;
+            }
+        }
+
+        .content__wrap-text {
+            height: 55%;
+            width: 100%;
+            padding-left: 0;
+            gap: 0;
+            text-align: center;
+
+            .heading-5 {
+                font-size: 2rem;
+                line-height: 2.4rem;
+                letter-spacing: 0.3375rem;
+                position: absolute;
+                top: 13rem;
+                left: 3rem;
+                
+            }
+
+            .nav-and-text {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .content__wrap-nav {
+
+
+                    ul {
+                        flex-direction: row;
+                        // justify-content: space-between;
+                        gap: 2rem;
+
+                        a {
+                            font-size: 2rem;
+                            line-height: 2.4rem;
+                            letter-spacing: 0.337rem;
+                    }
+                }
+
+            }
+
+            .text-details {
+                gap: 2rem;
+                p {
+                    line-height: 1.9rem;
+                    width: 50rem;
+                    text-align: center;
+
+                    &:not(:first-child) {
+                        line-height: 2.7rem;
+                    }
+                }
+
+                h3 {
+                    font-size: 4rem;
+                    line-height: 4.6rem;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+}

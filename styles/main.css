@@ -32,6 +32,12 @@
   height: 100%;
   display: flex;
 }
+@media (max-width: 768px) {
+  .u-content__wrap {
+    flex-direction: column;
+    width: 100%;
+  }
+}
 
 header {
   height: 100vh;
@@ -54,6 +60,7 @@ header .header_content {
   text-align: left;
   height: 80%;
   width: 50%;
+  gap: 2.4rem;
 }
 header .header_content h5 {
   color: #d0d6f9;
@@ -107,6 +114,56 @@ header .header__btn .landing-btn:visited:hover::after {
   mix-blend-mode: normal;
 }
 
+@media (max-width: 992px) {
+  header .header__btn {
+    padding: 0 0 5rem 3rem;
+  }
+  header .header_content {
+    padding-left: 2rem;
+  }
+  header .header_content .heading-5 {
+    font-size: 2rem;
+    line-height: 2.4rem;
+    letter-spacing: 0.38rem;
+  }
+  header .header_content .heading-1 {
+    line-height: 15rem;
+  }
+  header .header_content p {
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  header {
+    background: url(../images/home-tab.jpg) no-repeat center center/cover;
+  }
+  header .u-content__wrap {
+    flex-direction: column;
+  }
+  header .header_content {
+    height: 60%;
+    width: 100%;
+    justify-content: center;
+    padding-top: 7rem;
+    gap: 1rem;
+    text-align: center;
+  }
+  header .header__btn {
+    height: 40%;
+    width: 100%;
+    align-items: center;
+    padding: 0;
+  }
+  header .header__btn .landing-btn:link,
+  header .header__btn .landing-btn:visited {
+    font-size: 3.2rem;
+    line-height: 3.7rem;
+    letter-spacing: 0.2rem;
+    padding: 14% 9%;
+  }
+}
 #crew {
   height: 100vh;
   width: 100vw;
@@ -199,9 +256,62 @@ header .header__btn .landing-btn:visited:hover::after {
   background: url(../images/crew-4.png) no-repeat center center/contain;
 }
 
+@media (max-width: 992px) {
+  #crew .content__wrap-text {
+    padding-left: 3rem;
+  }
+}
+@media (max-width: 768px) {
+  #crew .container {
+    background: url(../images/crew-tab-bg.jpg);
+  }
+  #crew .content__wrap-img {
+    height: 50%;
+    width: 100%;
+  }
+  #crew .content__wrap-img .image {
+    height: 90%;
+    width: 100%;
+  }
+  #crew .content__wrap-img .crew-1 {
+    background: url(../images/crew-1.png) no-repeat center center/contain;
+  }
+  #crew .content__wrap-text {
+    height: 50%;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    padding-left: 0;
+  }
+  #crew .content__wrap-text .heading-5 {
+    font-size: 2rem;
+    line-height: 2.4rem;
+    letter-spacing: 0.3375rem;
+    align-self: flex-start;
+    margin-top: 13rem;
+    margin-left: 3rem;
+  }
+  #crew .content__wrap-text .crew-title {
+    margin-top: 5rem;
+    font-size: 2.4rem;
+    line-height: 2.7rem;
+  }
+  #crew .content__wrap-text .crew-name {
+    font-size: 4rem;
+    line-height: 6.58rem;
+  }
+  #crew .content__wrap-text .content-para {
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    text-align: center;
+    font-family: "Barlow";
+  }
+  #crew .content__wrap-text .content__wrap-footer {
+    margin-top: 3rem;
+  }
+}
 #destination {
-  height: -moz-fit-content;
-  height: fit-content;
+  height: 100vh;
   width: 100vw;
   color: #ffffff;
 }
@@ -209,7 +319,7 @@ header .header__btn .landing-btn:visited:hover::after {
   background: url(../images/dest-bg.jpg);
 }
 #destination .content__wrap-img {
-  width: 50%;
+  width: 40vw;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -226,8 +336,8 @@ header .header__btn .landing-btn:visited:hover::after {
   letter-spacing: 4.725px;
 }
 #destination .content__wrap-img .image {
-  height: 70.5%;
-  width: 95.807%;
+  height: 100%;
+  width: 100%;
   margin-top: 5rem;
 }
 #destination .content__wrap-img .moon-img {
@@ -253,7 +363,7 @@ header .header__btn .landing-btn:visited:hover::after {
   padding: 0 12rem 2rem 12rem;
 }
 #destination .content__wrap-text nav {
-  margin-top: 20rem;
+  margin-top: 13rem;
 }
 #destination .content__wrap-text nav ul {
   list-style: none;
@@ -280,15 +390,15 @@ header .header__btn .landing-btn:visited:hover::after {
   line-height: 3.2rem;
   color: #d0d6f9;
   text-align: justify;
-  border-bottom: 1px solid #777;
+  border-bottom: 1px solid #383B4B;
   padding-bottom: 2.5rem;
 }
 #destination .content__wrap-footer {
   display: flex;
   gap: 5rem;
   text-transform: uppercase;
-  font-style: normal;
   font-weight: 400;
+  width: 50vw;
 }
 #destination .content__wrap-footer .foot-text-sm {
   font-family: "Barlow Condensed";
@@ -304,6 +414,71 @@ header .header__btn .landing-btn:visited:hover::after {
   line-height: 3.2rem;
 }
 
+@media (max-width: 992px) {
+  #destination .content__wrap-text {
+    align-items: center;
+    padding: 3rem;
+  }
+  #destination .content__wrap-text .content-para {
+    text-align: center;
+  }
+  #destination .content__wrap-text .content__wrap-footer {
+    gap: 2rem;
+    text-align: center;
+    justify-content: center;
+  }
+  #destination .content__wrap-text .content__wrap-footer .foot-text-sm {
+    font-size: 1rem;
+    line-height: 1.2rem;
+    letter-spacing: 0.23625rem;
+    margin: 0.8rem 0.5rem;
+  }
+  #destination .content__wrap-text .content__wrap-footer .foot-text-lg {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+  }
+}
+@media (max-width: 768px) {
+  #destination .container {
+    background: url(../images/Dest-tab-bg.jpg);
+  }
+  #destination .content__wrap-img {
+    height: 50%;
+    width: 100%;
+  }
+  #destination .content__wrap-img .heading-5 {
+    font-size: 2rem;
+    line-height: 2.4rem;
+    letter-spacing: 0.3375rem;
+    align-self: flex-start;
+    margin-top: 13rem;
+    margin-left: 3rem;
+  }
+  #destination .content__wrap-text {
+    height: 50%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  #destination .content__wrap-text nav {
+    margin-top: 2rem;
+  }
+  #destination .content__wrap-text nav ul a {
+    font-size: 1.6rem;
+  }
+  #destination .content__wrap-text .content-heading {
+    font-size: 8rem;
+    line-height: 9.1rem;
+  }
+  #destination .content__wrap-text .content-para {
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    text-align: center;
+    font-family: "Barlow";
+    padding-bottom: 3.5rem;
+  }
+}
 #technology {
   height: 100vh;
   width: 100vw;
@@ -373,7 +548,7 @@ header .header__btn .landing-btn:visited:hover::after {
   line-height: 2.7rem;
   letter-spacing: 0.27rem;
   color: #d0d6f9;
-  width: 44.2rem;
+  max-width: 44.2rem;
   text-align: justify;
 }
 #technology .content__wrap-text .nav-and-text .text-details h3 {
@@ -384,8 +559,8 @@ header .header__btn .landing-btn:visited:hover::after {
   margin-bottom: 1rem;
 }
 #technology .content__wrap-img {
-  width: 27%;
-  height: 90%;
+  width: 35vw;
+  height: 60vh;
   align-self: flex-end;
 }
 #technology .content__wrap-img .image {
@@ -398,7 +573,86 @@ header .header__btn .landing-btn:visited:hover::after {
 #technology .content__wrap-img .tech-2 {
   background: url(../images/tech-2.jpg) no-repeat center center/contain;
 }
+#technology .content__wrap-img .tech-3 {
+  background: url(../images/tech-3.jpg) no-repeat center center/contain;
+}
 
+@media (max-width: 992px) {
+  #technology .content__wrap-text {
+    padding-left: 5rem;
+  }
+}
+@media (max-width: 768px) {
+  #technology .conntainer {
+    background: url(../images/tech-tab-bg.jpg);
+  }
+  #technology .u-content__wrap {
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 0;
+    position: relative;
+  }
+  #technology .content__wrap-img {
+    height: 35%;
+    width: 100%;
+    margin-top: 18rem;
+  }
+  #technology .content__wrap-img .tech-1 {
+    background: url(../images/tech-1-tab.jpg) no-repeat center center/cover;
+  }
+  #technology .content__wrap-img .tech-2 {
+    background: url(../images/tech-2-tab.jpg) no-repeat center center/cover;
+  }
+  #technology .content__wrap-img .tech-3 {
+    background: url(../images/tech-3-tab.jpg) no-repeat center center/cover;
+  }
+  #technology .content__wrap-text {
+    height: 55%;
+    width: 100%;
+    padding-left: 0;
+    gap: 0;
+    text-align: center;
+  }
+  #technology .content__wrap-text .heading-5 {
+    font-size: 2rem;
+    line-height: 2.4rem;
+    letter-spacing: 0.3375rem;
+    position: absolute;
+    top: 13rem;
+    left: 3rem;
+  }
+  #technology .content__wrap-text .nav-and-text {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #technology .content__wrap-text .nav-and-text .content__wrap-nav ul {
+    flex-direction: row;
+    gap: 2rem;
+  }
+  #technology .content__wrap-text .nav-and-text .content__wrap-nav ul a {
+    font-size: 2rem;
+    line-height: 2.4rem;
+    letter-spacing: 0.337rem;
+  }
+  #technology .content__wrap-text .nav-and-text .text-details {
+    gap: 2rem;
+  }
+  #technology .content__wrap-text .nav-and-text .text-details p {
+    line-height: 1.9rem;
+    width: 50rem;
+    text-align: center;
+  }
+  #technology .content__wrap-text .nav-and-text .text-details p:not(:first-child) {
+    line-height: 2.7rem;
+  }
+  #technology .content__wrap-text .nav-and-text .text-details h3 {
+    font-size: 4rem;
+    line-height: 4.6rem;
+    margin-bottom: 0;
+  }
+}
 *,
 *::after,
 *::before {
@@ -441,7 +695,7 @@ h5, p, a {
 
 .navbar {
   width: 100%;
-  height: 9.8rem;
+  height: 10vh;
   position: fixed;
   top: 1.5rem;
   left: 0;
@@ -461,16 +715,16 @@ h5, p, a {
 }
 .navbar .line {
   height: 0.5px;
-  width: 33%;
+  min-width: 33vw;
   background-color: #ffffff;
-  position: absolute;
   position: absolute;
   left: 10.5%;
 }
 .navbar .nav {
   width: 57%;
+  width: 57vw;
   position: absolute;
-  right: -0.5%;
+  right: 0;
   background-color: rgba(255, 255, 255, 0.04);
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
@@ -494,4 +748,37 @@ h5, p, a {
 .navbar .nav ol li span {
   font-weight: 700;
   margin-right: 0.5rem;
+}
+
+@media (max-width: 950px) {
+  .navbar .line {
+    width: 30vw;
+  }
+  .navbar nav {
+    width: 45vw;
+  }
+  .navbar nav ol li a span {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .navbar {
+    top: 0;
+    z-index: 10;
+  }
+  .navbar .line {
+    display: none;
+  }
+  .navbar nav {
+    width: 45vw;
+  }
+  .navbar nav ol li a {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    letter-spacing: 0.2rem;
+    padding: 2rem 1rem;
+  }
+  .navbar nav ol li a span {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */
