@@ -49,6 +49,8 @@ h1, h2, h3, h4 {
     color: $color-primary;
 }
 
+h1 { font-weight: 400;}
+
 h5, p, a {
     font-family: 'Barlow Condensed', sans-serif;
 }
@@ -128,24 +130,150 @@ h5, p, a {
 
     }
 
+    .mobile__nav {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        .toggler {
+            position: fixed;
+            top: 0;
+            right: 2rem;
+            width: 4rem;
+            height: 4rem;
+            padding: 1rem;
+            opacity: 0;
+            cursor: pointer;
+            z-index: 3;
+
+           
+        
+        }
+
+        .hamburger {
+            position: fixed;
+            top: 0;
+            right: 2rem;
+            width: 4rem;
+            height: 4rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1;
+            opacity: 0.75;
+            margin: 10px 0 0 10px;
+
+            .control {
+                position: relative;
+                width: 90%;
+                height: 2px;
+                background-color: #fff;
+                transition: all 0.4s ease-in;
+
+                &::before, 
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    height: 2px;
+                    background-color: #fff;
+                    top: -10px; 
+
+                }
+
+                &::after {
+                    top: 10px;
+                }
+            }
+        }
+
+        .toggler:checked + .hamburger .control {
+            transform: rotate(135deg);
+        }
+
+        .toggler:checked + .hamburger .control::before,
+        .toggler:checked + .hamburger .control::after {
+            transform: rotate(90deg);
+            top: 0;
+        }
+
+        .toggler:checked:hover + .hamburger .control {
+            transform: rotate(230deg);
+        }
+
+        .menu {
+            position: fixed;
+            visibility: hidden;
+            top: 0;
+            right: 0;
+            width: 70vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+
+            .mo-nav {
+                width: 100%;
+                height: 100%;
+                background-color: rgba(255, 255, 255, 0.04);
+                backdrop-filter: blur(40.77px);
+
+                ol {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: space-evenly;
+                    list-style: none;
+                    margin: 10rem 0 0 1rem;
+                    
+                    li {
+                        
+                        display: block;
+                        padding:  2rem;
+                        a {
+                            text-decoration: none;
+                            color: #ffffff;
+                            font-size: 1.6rem;
+                            line-height: 1.92rem;
+                            letter-spacing: 0.2rem;
+                            font-weight: 400;
+                            
+                        }
+        
+                        span {
+                            font-weight: 700;
+                            margin-right: 0.5rem;
+                            display: inline-block;
+                        }
+                    }
+                }
+
+
+            }
+            
+        }
+
+        .toggler:checked ~ .menu {
+            visibility: visible;
+        }
+
+
+    }
+
 }
 
-@media (max-width: $laptop-m) {
+@media (max-width: $laptop) {
 
     .navbar {
         .line {
             width: 30vw;
-            // display: none;
         }
 
         nav {
-            width: 45vw;
+            width: 50vw;
             
             ol li a {
-                // font-size: 1.6rem;
-                // line-height: 1.6rem;
-                // padding:  2rem 1rem;
-
                 span {
                     display: none;
                 }
@@ -169,14 +297,14 @@ h5, p, a {
             display: none;
         }
         
-        nav {
-            width: 45vw;
+        .nav {
+            width: 70vw;
             
             ol li a {
                 font-size: 1.4rem;
                 line-height: 1.6rem;
                 letter-spacing: 0.2rem;
-                padding:  2rem 1rem;
+                padding:  2rem 0.5rem;
 
                 span {
                     display: none;
@@ -186,6 +314,18 @@ h5, p, a {
             
 
             
+        }
+    }
+}
+
+@media (max-width: $mobile) {
+    .navbar {
+         .nav {
+            display: none;
+
+        }
+        .mobile__nav {
+            display: block;
         }
     }
 }

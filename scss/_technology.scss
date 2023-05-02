@@ -62,7 +62,7 @@
                         font-size: 3.2rem;
                         line-height: 3.6rem;
                         text-align: center;
-                        padding: 1rem 2rem;
+                        padding: 0.6em 0.9em;
                         border: 1px solid rgba(255, 255, 255, 0.25);
                         background: transparent;
                         
@@ -208,7 +208,7 @@
                         // justify-content: space-between;
                         gap: 2rem;
 
-                        a {
+                       li a {
                             font-size: 2rem;
                             line-height: 2.4rem;
                             letter-spacing: 0.337rem;
@@ -221,7 +221,6 @@
                 gap: 2rem;
                 p {
                     line-height: 1.9rem;
-                    width: 50rem;
                     text-align: center;
 
                     &:not(:first-child) {
@@ -238,4 +237,74 @@
         }
     }
 }
+}
+
+@media (max-width: $mobile) {
+    #technology {
+
+        .content__wrap-img {
+            height: 25%;
+
+        }
+
+        .content__wrap-text {
+            justify-content: flex-start;
+            padding: 4rem 2rem;
+
+            .heading-5 {
+                position: absolute;
+                top: 8rem;
+                left: 50%;
+                transform: translateX(-50%);
+                margin: 0;
+                font-size: 1.6rem;
+                line-height: 1.9rem;
+                letter-spacing: 0.27rem;
+
+            }
+                
+            .nav-and-text {
+                gap: 3rem;
+        
+                    .content__wrap-nav {
+    
+                        ul li {
+
+
+    
+                            a {
+                                font-size: 1.6rem;
+                                line-height: 1.8rem;
+                                letter-spacing: 0.1rem;
+                        }
+                    }
+        
+                    }
+        
+                    .text-details {
+                        gap: 0;
+                        p {
+                            font-size: 1.4rem;
+                            line-height: 1.7rem;
+                            // width: 50rem;
+                            letter-spacing: 0.2rem;
+                            margin-bottom: 1rem;
+        
+                            &:not(:first-child) {
+                                font-size: 1.5rem;
+                                line-height: 2.5rem;
+                            }
+                        }
+        
+                        h3 {
+                            font-size: 2.4rem;
+                            line-height: 2.8rem;
+                            margin-bottom: 1rem;
+                        }
+                }
+                
+                
+            }
+        }
+    }
 }
