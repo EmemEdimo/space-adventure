@@ -233,3 +233,33 @@
         }
 
     }
+
+    @media (max-width: $mobile) {
+       #destination {
+
+        .content__wrap-img {
+
+            .heading-5 {
+                align-self: center;
+                margin-top: 8rem;
+            }
+        }
+
+        .content__wrap-text {
+
+            nav {
+                margin-top: 0;
+            }
+
+            .content-para {
+                padding-bottom: 2.5rem;
+            }
+
+            .content__wrap-footer {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    
+       }
+    }
