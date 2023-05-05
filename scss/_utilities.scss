@@ -32,11 +32,9 @@
 
 .u-content__wrap {
     width: 90%;
+    max-width: 210rem;
     height: 100%;
-    // border: 1px solid #fff;
-    // margin-top: 3rem;
     display: flex;
-    // padding: 1.5rem 0;
 
     @media (max-width: $tablet) {
         & {

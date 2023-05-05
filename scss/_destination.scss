@@ -2,6 +2,7 @@
 #destination {
     height: 100vh;
     width: 100vw;
+    max-width: 210rem;
     
     color: $color-primary;
 
@@ -138,6 +139,8 @@
 
     @media (max-width: $laptop) {
         #destination {
+            // overflow-y: scroll;
+            
 
             .content__wrap-text {
 
@@ -204,7 +207,7 @@
                 height: 50%;
                 width: 100%;
                 align-items: center;
-                justify-content: center;
+                justify-content: flex-start;
                 text-align: center;
                 nav {
                     margin-top: 2rem;
@@ -238,6 +241,7 @@
        #destination {
 
         .content__wrap-img {
+            height: 40%;
 
             .heading-5 {
                 align-self: center;
@@ -246,18 +250,21 @@
         }
 
         .content__wrap-text {
-
+            height: 50%;
+            padding: 0 3rem;
+            
             nav {
                 margin-top: 0;
             }
-
+            
             .content-para {
-                padding-bottom: 2.5rem;
+                padding-bottom: 1.5rem;
             }
-
+            
             .content__wrap-footer {
-                flex-direction: column;
-                gap: 1rem;
+                width: 100%;
+                gap: 10%;
+
             }
         }
     

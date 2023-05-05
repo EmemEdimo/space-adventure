@@ -182,18 +182,17 @@ header {
     header {
 
         .header__btn {
-            padding: 0;
-
+            align-items: flex-start;
+            padding-top: 5%;
+            
             .landing-btn:link,
-        .landing-btn:visited {
-            font-size: 2rem;
-            line-height: 2.3rem;
-            letter-spacing: 0.125rem;
-            // padding: 14% 9%;
-            // padding: 3.3em 2.1em;
+            .landing-btn:visited {
+                font-size: 2rem;
+                line-height: 2.3rem;
+                letter-spacing: 0.125rem;
+            }
         }
-        }
-
+        
         .header_content {
 
             padding: 2rem 5rem;

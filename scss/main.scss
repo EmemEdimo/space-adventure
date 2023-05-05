@@ -60,7 +60,6 @@ h5, p, a {
 //THE NAVBAR STYLING FOR THE ENTIRE PROJECT
 .navbar {
     width: 100%;
-    // height: 9.8rem;
     height: 10vh;
     position: fixed;
     top: 1.5rem;
@@ -68,8 +67,7 @@ h5, p, a {
 
     display: flex;
     align-items: center ;
-    // border: 1px solid yellow;
-
+    
     .logo {
         position: absolute;
         left: 3%;
@@ -84,7 +82,8 @@ h5, p, a {
 
     .line {
         height: 0.5px;
-        min-width: 33vw;
+        // min-width: 33vw;
+        min-width: 30%;
         background-color: #ffffff;
         position: absolute;
         left: 10.5%;
@@ -92,22 +91,25 @@ h5, p, a {
     }
 
     .nav {
-        width: 57%;
-        width: 57vw;
+        min-width:65%;
+        // width: 57vw;
         position: absolute;
         right: 0;
         background-color: rgba(255, 255, 255, 0.04);
         backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
         opacity: 0.9;
         
     
 
         ol {
             display: flex;
-            justify-content: space-evenly;
+            justify-content: center;
+            
             list-style: none;
 
             li {
+                margin-right: 5rem;
                 
                 a {
                     display: inline-block;
@@ -117,7 +119,7 @@ h5, p, a {
                     line-height: 1.92rem;
                     letter-spacing: 0.2rem;
                     font-weight: 400;
-                    padding:  2rem;
+                    padding:  2rem 1rem;
                 }
 
                 span {
@@ -218,6 +220,7 @@ h5, p, a {
                 height: 100%;
                 background-color: rgba(255, 255, 255, 0.04);
                 backdrop-filter: blur(40.77px);
+                -webkit-backdrop-filter: blur(40.77px);
 
                 ol {
                     display: flex;
@@ -267,11 +270,11 @@ h5, p, a {
 
     .navbar {
         .line {
-            width: 30vw;
+            width: 25vw;
         }
 
-        nav {
-            width: 50vw;
+        .nav {
+            width: 60vw;
             
             ol li a {
                 span {
