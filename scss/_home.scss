@@ -33,6 +33,7 @@ header {
 
         p {
             max-width: 44.4rem;
+            max-width: 44.4rem;
             font-size: 1.8rem;
             line-height: 3.2rem;
             color: #d0d6f9;
@@ -174,6 +175,52 @@ header {
         }
         
         }
+    }
+}
+
+@media (max-width: $mobile) {
+
+    header {
+
+        .header__btn {
+            padding: 0;
+
+            .landing-btn:link,
+        .landing-btn:visited {
+            font-size: 2rem;
+            line-height: 2.3rem;
+            letter-spacing: 0.125rem;
+            // padding: 14% 9%;
+            // padding: 3.3em 2.1em;
+        }
+        }
+
+        .header_content {
+
+            padding: 2rem 5rem;
+            gap: 3rem;
+
+            .heading-5 {
+                font-size: 1.6rem;
+                line-height: 1.9rem;
+                letter-spacing: 0.27rem;
+
+            }
+
+            .heading-1 {
+                font-size: 8rem;
+                line-height: 10rem;
+            }
+
+            p {
+                font-size: 1.5rem;
+                line-height: 2.5rem;
+                text-align: center;
+            }
+
+
+        }
+
     }
 }
 

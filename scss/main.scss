@@ -139,7 +139,7 @@ h5, p, a {
         right: 0;
         .toggler {
             position: fixed;
-            top: 0;
+            top: 2rem;
             right: 2rem;
             width: 4rem;
             height: 4rem;
@@ -154,7 +154,7 @@ h5, p, a {
 
         .hamburger {
             position: fixed;
-            top: 0;
+            top: 2rem;
             right: 2rem;
             width: 4rem;
             height: 4rem;
@@ -220,7 +220,6 @@ h5, p, a {
                 height: 100%;
                 background-color: rgba(255, 255, 255, 0.04);
                 backdrop-filter: blur(40.77px);
-                -webkit-backdrop-filter: blur(40.77px);
 
                 ol {
                     display: flex;
@@ -270,11 +269,11 @@ h5, p, a {
 
     .navbar {
         .line {
-            width: 25vw;
+            width: 30vw;
         }
 
-        .nav {
-            width: 60vw;
+        nav {
+            width: 50vw;
             
             ol li a {
                 span {

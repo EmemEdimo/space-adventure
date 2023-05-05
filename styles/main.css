@@ -68,6 +68,7 @@ header .header_content h5 {
 }
 header .header_content p {
   max-width: 44.4rem;
+  max-width: 44.4rem;
   font-size: 1.8rem;
   line-height: 3.2rem;
   color: #d0d6f9;
@@ -170,6 +171,35 @@ header .header__btn .landing-btn:visited:hover::after {
     transform: scale(0);
     opacity: 0;
     mix-blend-mode: normal;
+  }
+}
+@media (max-width: 576px) {
+  header .header__btn {
+    padding: 0;
+  }
+  header .header__btn .landing-btn:link,
+  header .header__btn .landing-btn:visited {
+    font-size: 2rem;
+    line-height: 2.3rem;
+    letter-spacing: 0.125rem;
+  }
+  header .header_content {
+    padding: 2rem 5rem;
+    gap: 3rem;
+  }
+  header .header_content .heading-5 {
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    letter-spacing: 0.27rem;
+  }
+  header .header_content .heading-1 {
+    font-size: 8rem;
+    line-height: 10rem;
+  }
+  header .header_content p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    text-align: center;
   }
 }
 @media (max-width: 576px) {
@@ -917,7 +947,7 @@ h5, p, a {
 }
 .navbar .mobile__nav .toggler {
   position: fixed;
-  top: 0;
+  top: 2rem;
   right: 2rem;
   width: 4rem;
   height: 4rem;
@@ -928,7 +958,7 @@ h5, p, a {
 }
 .navbar .mobile__nav .hamburger {
   position: fixed;
-  top: 0;
+  top: 2rem;
   right: 2rem;
   width: 4rem;
   height: 4rem;
@@ -983,8 +1013,8 @@ h5, p, a {
   width: 100%;
   height: 100%;
   background-color: rgba(255, 255, 255, 0.04);
-  backdrop-filter: blur(40.77px);
   -webkit-backdrop-filter: blur(40.77px);
+          backdrop-filter: blur(40.77px);
 }
 .navbar .mobile__nav .menu .mo-nav ol {
   display: flex;
@@ -1017,12 +1047,12 @@ h5, p, a {
 
 @media (max-width: 992px) {
   .navbar .line {
-    width: 25vw;
+    width: 30vw;
   }
-  .navbar .nav {
-    width: 60vw;
+  .navbar nav {
+    width: 50vw;
   }
-  .navbar .nav ol li a span {
+  .navbar nav ol li a span {
     display: none;
   }
 }
